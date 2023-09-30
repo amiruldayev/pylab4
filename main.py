@@ -86,8 +86,32 @@ import array
 #     array.sort()
 #     print(array[1])
 
+
+def NumberOfDays():
+    try:
+        days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        month = int(input("input month:"))
+        print(days[month])
+    except ValueError:
+        print("qwe")
+
+
+#------------------------------------------------------------------
+
+
+def WeighInCeremony():
+    try:
+        kg = int(input("Enter weight:"))
+        if kg <= 60 :    print("Light weight")
+        elif kg <= 64 and kg >=60:    print("First welterweight ")
+        elif kg <= 69 and kg >=64:    print("Welterweight ")
+    except ValueError:
+        print("qwe")
+
 #ratio()
 #Roskomnadzor()
 # ArithmeticProgression()
 # RookMove()
 # AverageNumber()
+#NumberOfDays()
+WeighInCeremony()
